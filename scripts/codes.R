@@ -1,2 +1,12 @@
-merge(customer, store, by = "store_id")[, c("first_name", "last_name", "store_id")]
+# Count number of films by rating
+rating_counts <- table(film$rating)
+
+# Bar plot
+barplot(
+  rating_counts,
+  main = "Number of Films per Rating",
+  xlab = "Rating",
+  ylab = "Number of Films",
+  col = "skyblue"
+)
 
